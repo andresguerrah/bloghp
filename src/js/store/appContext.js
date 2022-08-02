@@ -32,6 +32,8 @@ const injectContext = PassedComponent => {
 			 * state.actions.loadSomeData(); <---- calling this function from the flux.js actions
 			 *
 			 **/
+			state.actions.getHufflepuff();
+			state.actions.getSlytherin();
 			state.actions.getGriffindor();
 		}, []);
 

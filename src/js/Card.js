@@ -1,18 +1,18 @@
 import React from "react";
 
-const Card = ()=>{
+const Card = (props)=>{
 
 
   return (  
     <div className="card" style={{width:"18rem"}}>
-  <img className="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap"/>
+  <img className="card-img-top" src={props.img} alt="Card image cap"/>
   <div className="card-body">
-    <h5 className="card-title">NOMBRE PERSONAJE</h5>
+    <h5 className="card-title">{props.nombre}</h5>
   </div>
   <ul className="list-group list-group-flush">
-    <li className="list-group-item">Gender</li>
-    <li className="list-group-item">House</li>
-    <li className="list-group-item">Date of Birth</li>
+    <li className="list-group-item">Gender: {props.gender}</li>
+    <li className="list-group-item">House: {props.casa}</li>
+
   </ul>
   <div className="card-body">
     
